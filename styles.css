@@ -54,9 +54,21 @@ main {
   font-size: 18px;
   line-height: 1.75;
 }
-section {
+.article__one,
+.article__two {
+  margin: 1rem 3rem;
   display: flex;
+  align-items: center;
   gap: 2rem;
+}
+.article__one img,
+.article__two img {
+  width: 100%;
+  height: auto;
+}
+.div__one,
+.div__two {
+  flex: 1;
 }
 footer {
   background-color: #1e3264;
