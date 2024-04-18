@@ -1,6 +1,72 @@
 body {
-  background-color: #f0f0f0;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  position: relative;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body::before {
+  content: "";
+  background: url("imgs/volcano.jpg");
+  background-size: cover;
+  opacity: 0.75;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+h1,
+h2 {
+  font-family: cursive;
+}
+.ul {
+  list-style-type: none;
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #888;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  overflow: hidden;
+}
+
+.ul li {
+  text-decoration: none;
+  padding: 18px 20px;
+  margin: 0 12px;
+}
+.ul li:hover {
+  color: #444;
+  transition: all 0.6s;
+  transform: scale(1.05);
+}
+main {
+  width: 80%;
+  margin: 3rem auto;
+  text-align: center;
+  padding: 12px 18px;
+  color: lime;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 8px 0;
 }
