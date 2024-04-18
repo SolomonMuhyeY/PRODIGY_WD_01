@@ -1,72 +1,69 @@
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
   padding: 0;
-  position: relative;
+  box-sizing: border-box;
 }
 ::-webkit-scrollbar {
   width: 0;
 }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e3f6fde6;
+  color: #1e3264;
+}
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
-body::before {
-  content: "";
-  background: url("imgs/volcano.jpg");
-  background-size: cover;
-  opacity: 0.75;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
-h1,
-h2 {
-  font-family: cursive;
-}
-.ul {
-  list-style-type: none;
-  display: flex;
+#header #nav {
   position: fixed;
   top: 0;
   width: 100%;
-  margin: 0;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #888;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  border: 1px solid #1e3264;
+  margin: 0;
+  padding: 24px;
 }
-
-.ul li {
-  text-decoration: none;
-  padding: 18px 20px;
-  margin: 0 12px;
-}
-.ul li:hover {
-  color: #444;
-  transition: all 0.6s;
-  transform: scale(1.05);
+/* #nav.scrolled {
+  background-color: #bac9ee;
+} */
+#header #nav li {
+  margin: 0 1rem;
 }
 main {
-  width: 80%;
-  margin: 3rem auto;
-  text-align: center;
-  padding: 12px 18px;
-  color: lime;
+  margin: 7rem 0;
 }
-
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100vh;
+  background-position: center;
+  text-align: center;
+  width: 65%;
+  margin: 8rem auto;
+}
+.hero h1 {
+  font-size: 48px;
+}
+.hero p {
+  font-size: 18px;
+  line-height: 1.75;
+}
+section {
+  display: flex;
+  gap: 2rem;
+}
 footer {
+  background-color: #1e3264;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 8px 0;
 }
