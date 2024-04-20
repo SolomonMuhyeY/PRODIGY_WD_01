@@ -17,6 +17,14 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+section {
+  padding-bottom: 3rem;
+}
+.article__one,
+.article__two,
+.article__three {
+  padding-top: 3rem;
+}
 .logo {
   z-index: 45;
   /* background-color: navy; */
@@ -63,13 +71,15 @@ main {
   margin-bottom: 6rem;
 }
 .hero {
+  width: 45%;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* background: gray; */
-  gap: 2rem;
+  position: relative;
+  top: 2rem;
+  gap: 1rem;
   height: 100vh;
-  background-position: center;
   text-align: center;
 }
 .hero h1 {
@@ -80,16 +90,14 @@ main {
   line-height: 1.75;
 }
 .article__one,
-.article__two,
-.article__three {
+.article__two {
   margin: 1rem 3rem;
   display: flex;
   align-items: center;
   gap: 2rem;
 }
 .article__one img,
-.article__two img,
-.article__three img {
+.article__two img {
   width: 100%;
   height: auto;
   cursor: pointer;
@@ -109,6 +117,30 @@ main {
 .div__two img:hover {
   transform: scale(1.025);
   transition: transform 0.25s;
+}
+.article__three {
+  text-align: center;
+  margin: 1rem 3rem;
+}
+.intern__headers {
+  margin: 3rem;
+}
+.intern__headers h1 {
+  font-size: 48px;
+}
+.internships {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 2rem;
+}
+.internships div {
+  padding: 18px 24px;
+  border: 1px solid;
+  cursor: pointer;
+  transition: all 0.45s;
+}
+.internships div:hover {
+  transform: scale(1.025);
 }
 .address {
   margin: 4rem;
@@ -133,13 +165,19 @@ footer {
     justify-content: center;
     align-items: center;
   }
+  .article__one,
+  .article__two,
+  .article__three {
+    padding-top: 5rem;
+  }
   .hero {
     width: 90%;
     margin: 0 auto;
     padding: 1rem;
   }
   .article__one,
-  .article__two {
+  .article__two,
+  .article__three {
     gap: 2rem;
   }
   .article__one,
@@ -157,5 +195,10 @@ footer {
   .div__one,
   .div__two {
     flex: 1;
+  }
+  .internships {
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
   }
 }
