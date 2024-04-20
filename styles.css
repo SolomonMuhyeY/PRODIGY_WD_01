@@ -17,11 +17,16 @@ a {
 }
 .logo {
   z-index: 45;
+  /* background-color: navy; */
+}
+.logo img {
+  filter: invert(100%);
+  mix-blend-mode: difference;
 }
 #header #nav {
   position: fixed;
   top: 0;
-  background-color: gray;
+  /* background-color: gray; */
   width: 100%;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -53,7 +58,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: gray;
+  /* background: gray; */
   gap: 2rem;
   height: 100vh;
   background-position: center;
