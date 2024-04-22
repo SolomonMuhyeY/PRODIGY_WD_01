@@ -166,8 +166,8 @@ main {
   margin: 4rem;
 }
 .list__hover li:hover {
-  background: lavenderblush;
-  color: navy;
+  background: #b5b5a5;
+  color: #eee;
 }
 .address {
   display: flex;
