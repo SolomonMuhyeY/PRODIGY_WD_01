@@ -11,5 +11,9 @@ const hamburgerBtn = document.getElementById("hamburger-btn");
 const navLinks = document.querySelector(".ul");
 
 hamburgerBtn.addEventListener("click", () => {
-  navLinks.classList.toggle("show");
+  if (navLinks.style.display === "block") {
+    navLinks.style.display = "none";
+  } else {
+    navLinks.style.display = "block";
+  }
 });
