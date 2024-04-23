@@ -189,7 +189,25 @@ footer {
   bottom: 0;
   width: 100%;
 }
+/* toggler */
+.nav-container {
+  display: none;
+}
 
+.hamburger-btn {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin-bottom: 5px;
+}
 @media screen and (max-width: 768px) {
   #header #nav {
     padding: 1rem;
@@ -238,5 +256,17 @@ footer {
   }
   .intern_notes {
     width: 85%;
+  }
+  /* toggler */
+  .nav-container {
+    display: block;
+  }
+
+  .hamburger-btn {
+    display: block;
+  }
+
+  .ul {
+    display: none;
   }
 }
