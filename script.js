@@ -6,3 +6,10 @@ window.addEventListener("scroll", function () {
     header.classList.remove("scrolled"); // Remove the CSS class when scrolled to the top
   }
 });
+// toggler
+const hamburgerBtn = document.getElementById("hamburger-btn");
+const navLinks = document.querySelector(".ul");
+
+hamburgerBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
