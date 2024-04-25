@@ -1,5 +1,5 @@
 window.addEventListener("scroll", function () {
-  var header = document.getElementById("nav");
+  var header = document.getElementById("nav__container");
   if (window.scrollY > 0) {
     header.classList.add("scrolled"); // Add a CSS class to change the background color
   } else {
@@ -8,7 +8,7 @@ window.addEventListener("scroll", function () {
 });
 // toggler
 const hamburgerBtn = document.getElementById("hamburger-btn");
-const navLinks = document.querySelector(".ul");
+const navLinks = document.querySelector(".mobile__nav");
 
 hamburgerBtn.addEventListener("click", () => {
   if (navLinks.style.display === "block") {
