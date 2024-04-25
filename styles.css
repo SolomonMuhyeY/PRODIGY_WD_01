@@ -59,6 +59,16 @@ section {
   margin-bottom: 0;
   box-sizing: border-box;
 }
+.desktop__nav > .links li {
+  transition: all 2s;
+  margin: 0 6px;
+  border: 1px solid;
+  border-radius: 12px;
+}
+.desktop__nav > .links li:active {
+  transform: translateY(1px);
+  box-shadow: 1px 2px #81abae;
+}
 #nav__container.scrolled {
   background-color: transparent;
 }
@@ -72,7 +82,6 @@ section {
   border: 1px solid #6f7c9d;
   color: lightcoral;
   border-radius: 12px;
-  box-shadow: 1px 2px #81abae;
 }
 main {
   margin: 0 0 6rem 0;
@@ -288,5 +297,6 @@ footer {
   }
   .mobile__nav .ul li:hover {
     border: 0.5px solid #6f7c9d;
+    box-shadow: 1px 2px #81abae;
   }
 }
