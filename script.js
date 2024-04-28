@@ -2,8 +2,7 @@ window.addEventListener("scroll", function () {
   var header = document.getElementById("nav__container");
   if (window.scrollY > 0) {
     header.classList.add("scrolled");
-  } else {
-  }
+  } 
 });
 // toggler
 const hamburgerBtn = document.getElementById("hamburger-btn");
