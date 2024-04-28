@@ -201,10 +201,6 @@ footer {
   width: 100%;
 }
 /* toggler */
-.nav-container {
-  display: block;
-}
-
 .hamburger-btn {
   display: none;
   cursor: pointer;
