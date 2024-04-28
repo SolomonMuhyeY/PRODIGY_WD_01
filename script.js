@@ -1,8 +1,8 @@
 window.addEventListener("scroll", function () {
   var header = document.getElementById("nav__container");
-  if (window.scrollY > 0) {
-    header.classList.add("scrolled");
-  } 
+  // if (window.scrollY > 0) {
+  //   header.classList.add("scrolled");
+  // } 
 });
 // toggler
 const hamburgerBtn = document.getElementById("hamburger-btn");
