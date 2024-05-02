@@ -218,6 +218,9 @@ footer {
   background-color: #000;
   margin-bottom: 5px;
 }
+footer {
+  text-align: center;
+}
 @media screen and (max-width: 768px) {
   .article__one,
   .article__two,
@@ -258,6 +261,7 @@ footer {
   .intern_notes {
     width: 85%;
   }
+
   /* toggler */
   .hamburger-btn {
     display: block;
